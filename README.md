@@ -1,6 +1,9 @@
 # getExternalIP
 Get external IP from myexternalip.com.
-Useful to get external IP of Google Cloud Engine or AWS instance wich gets only local network IP.
+
+Useful to get external IP of Google Cloud Engine or AWS instance wich gets inside (`eth` interfaces) only local network IP and get to outside world by NAT or Forwarding.
+
+Using http://myexternalip.com web service.
 
 Example usage:
 ```go
