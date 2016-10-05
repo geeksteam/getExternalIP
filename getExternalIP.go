@@ -1,4 +1,4 @@
-// GetExternalIP getting IP of the service by myexternalip.com
+// Package getExternalIP getting IP of the service by myexternalip.com
 package getExternalIP
 
 import (
@@ -9,12 +9,13 @@ import (
 	"strings"
 )
 
+const getIPURL = "http://myexternalip.com/raw"
+
 // GetIP getting external IP from some service
 func GetIP() string {
-	GetIPURL := "http://myexternalip.com/raw"
-	resp, err := http.Get(GetIPURL)
+	resp, err := http.Get(getIPURL)
 	if err != nil {
-		fmt.Println("Error during get external IP from:" + GetIPURL)
+		fmt.Println("Error during get external IP from:" + getIPURL)
 		os.Exit(1)
 	}
 	defer resp.Body.Close()
