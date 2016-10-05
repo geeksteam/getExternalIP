@@ -12,7 +12,7 @@ import (
 	"github.com/geeksteam/getExternalIP"
 )
 
-// GetIP getting external IP from some service
+// GetIP getting external IP from web service
 func main() {
 	fmt.Println("Your external IP is:'" + getExternalIP.GetIP() + "'")
 }
