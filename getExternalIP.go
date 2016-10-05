@@ -1,5 +1,5 @@
 // GetExternalIP getting IP of the service by myexternalip.com
-package GetExternalIP
+package getExternalIP
 
 import (
 	"fmt"
