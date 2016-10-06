@@ -24,3 +24,15 @@ func main() {
 }
 
 ```
+
+Structure of `GetIPinfo()` return:
+```go
+type IPstruct struct {
+	IP      string 
+	City    string
+	Region  string
+	Country string 
+	Loc     string 
+	Org     string 
+}
+```
